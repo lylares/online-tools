@@ -3,11 +3,11 @@ var waitLoadCount = 0;
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 if (location.hostname != 'localhost') {
-  gtag('js', new Date());
-  gtag('config', 'G-WT6N5R6W6Z');
+  //gtag('js', new Date());
+  //gtag('config', 'G-WT6N5R6W6Z');
 
   (function () {
-    var gaUrl = 'https://www.googletagmanager.com/gtag/js?id=G-WT6N5R6W6Z';
+    //var gaUrl = 'https://www.googletagmanager.com/gtag/js?id=G-WT6N5R6W6Z';
 
     function initGTMOnEvent(e) {
       document.removeEventListener(event.type, initGTMOnEvent);
@@ -33,9 +33,7 @@ if (location.hostname != 'localhost') {
       document.addEventListener('mousemove', initGTMOnEvent);
       document.addEventListener('touchstart', initGTMOnEvent);
     } else {
-      delayScripts.push({
-        src: gaUrl
-      });
+  
     }
   })();
 }
